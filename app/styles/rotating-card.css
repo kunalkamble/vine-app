@@ -143,6 +143,7 @@
   margin: 5px 0;
   font-weight: 400;
   line-height: 20px;
+  word-wrap: break-word;
 }
 
 .card .profession {
