@@ -1,3 +1,5 @@
+'use strict';
+
 // ROUTES
 vineApp.config(function ($routeProvider) {
     $routeProvider

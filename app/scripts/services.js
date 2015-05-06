@@ -1,5 +1,6 @@
-// vineApp SERVICES
+'use strict';
 
+// vineApp SERVICES
 vineApp.service('vineService', ['$resource', function($resource) {
   this.GetPopular = function() {
       var vineAPI = $resource("https://community-vineapp.p.mashape.com/timelines/popular", 

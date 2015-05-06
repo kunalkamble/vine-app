@@ -1,3 +1,5 @@
+'use strict';
+
 // vineApp CONTROLLERS
 vineApp.controller('homeController', ['$scope', 'vineService', function($scope, vineService) {
     

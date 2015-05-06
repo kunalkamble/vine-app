@@ -1,3 +1,5 @@
+'use strict';
+
 // DIRECTIVES
 vineApp.directive("vinePopular", function() {
    return {
