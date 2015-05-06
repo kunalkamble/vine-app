@@ -1,0 +1,15 @@
+<h3>Hashtag</h3>
+<form class="form-inline" ng-submit="submit()">
+  <div class="form-group">
+    <label for="exampleInputName2">Hashtag</label>
+    <input type="text" class="form-control" id="hashtag" placeholder="funny" ng-model="hashtag">
+  </div>
+  <button type="submit" class="btn btn-default">Show</button>
+</form>
+<br>
+<div class="panel panel-default">
+  <div class="panel-heading">Result for <span class="label label-primary">{{hashtag}}</span> hashtag</div>
+  <div class="panel-body">
+    <vine-popular vine-feed='feed' ng-repeat="feed in hashtagFeedResult.data.records"></vine-popular>
+  </div>
+</div>

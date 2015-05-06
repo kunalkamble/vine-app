@@ -1,0 +1,55 @@
+<div class="col-md-4 col-sm-4">
+  <div class="card-container">
+    <div class="card">
+      <div class="front">
+        <div class="cover">
+<!--          <img src="images/rotating_card_thumb.png" />-->
+          <img src="{{vineFeed.thumbnailUrl}}" />
+        </div>
+        <div class="user">
+          <img class="img-circle" src="{{vineFeed.avatarUrl}}" />
+        </div>
+        <div class="content">
+          <div class="main">
+            <h3 class="name">{{vineFeed.username}}</h3>
+            <p class="profession"></p>
+            <h5><i class="fa fa-thumbs-o-up fa-fw text-muted"></i> {{vineFeed.likes.count}}</h5>
+            <h5><i class="fa fa-comment-o fa-fw text-muted"></i> {{vineFeed.comments.count}} </h5>
+          </div>
+          <div class="footer">
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end front panel -->
+      <div class="back">
+        <div class="header">
+          <h5 class="motto">
+            <a class="btn btn-success" href="{{vineFeed.shareUrl}}" target="_blank">Watch Video</a>
+          </h5>
+        </div>
+        <div class="content">
+          <div class="main">
+            
+            <h4 class="text-center">Description</h4>
+            <h5>{{vineFeed.description}}</h5>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="social-links text-center">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{vineFeed.shareUrl}}" target="_blank" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+            <a href="https://plus.google.com/share?url={{vineFeed.shareUrl}}" target="_blank" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+            <a href="https://twitter.com/home?status={{vineFeed.shareUrl}}" target="_blank" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- end back panel -->
+    </div>
+    <!-- end card -->
+  </div>
+  <!-- end card-container -->
+</div>
